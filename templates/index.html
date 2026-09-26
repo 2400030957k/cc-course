@@ -16,6 +16,7 @@
             font-family: Arial, sans-serif;
             background: #f4f7fb;
             color: #222;
+            line-height: 1.6;
         }
 
         header {
@@ -35,6 +36,11 @@
             color: white;
             text-decoration: none;
             margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         .hero {
@@ -52,7 +58,8 @@
         .hero p {
             font-size: 20px;
             color: #555;
-            margin-bottom: 30px;
+            margin: 0 auto 30px;
+            max-width: 700px;
         }
 
         .button {
@@ -63,6 +70,10 @@
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
         }
 
         .cards {
@@ -78,7 +89,7 @@
             width: 280px;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             text-align: center;
         }
 
@@ -97,6 +108,39 @@
             background: #1e293b;
             color: white;
             padding: 25px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                padding: 70px 20px;
+            }
+
+            .hero h2 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .cards {
+                padding: 40px 20px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 350px;
+            }
         }
     </style>
 </head>
